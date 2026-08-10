@@ -1,0 +1,1 @@
+"""Aplicativo inicial do portfólio."""
