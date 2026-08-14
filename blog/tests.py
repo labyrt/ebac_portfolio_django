@@ -1,3 +1,9 @@
 from django.test import TestCase
 
-# Create your tests here.
+
+class PostViewTest(TestCase):
+    def test_post_view_returns_hello_world(self):
+        response = self.client.get("/")
+
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Hello World")
